@@ -1,0 +1,35 @@
+.about {
+  background: #ebebeb;
+}
+
+.about-container {
+  text-align: center;
+}
+
+.technology-icons {
+  margin: 15px;
+  height: 48px;
+  width: 48px;
+}
+
+.about-desc {
+  width: 60%;
+  margin: 0px auto;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 360px) {
+  .technology-icons {
+    margin: 5px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .technology-icons {
+    margin: 5px;
+    height: 24px;
+    width: 24px;
+  }
+}

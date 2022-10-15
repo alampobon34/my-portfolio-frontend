@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: 20px 0;
+  color: #111111;
+}
+
+.footer-icon {
+  margin-left: 15px;
+  /* color: rgb(90, 90, 90); */
+  color: #111111;
+  opacity: 0.8;
+}
+
+/* .footer-icon:hover {
+  color: rgb(22, 22, 22);
+} */
+
+.linkedin:hover {
+  color: #004182;
+  opacity: 1;
+}
+
+.github:hover {
+  color: #1a1e22;
+  opacity: 1;
+}
+
+.twitter:hover {
+  color: #1c96e8;
+  opacity: 1;
+}
+
+.instagram:hover {
+  color: #f14500;
+  opacity: 1;
+}

@@ -1,0 +1,53 @@
+.project {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.project-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.project-details h2 {
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.project-details a {
+  text-decoration: none;
+  color: #ff3852;
+}
+
+.project-details span {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.project-details a:hover {
+  color: rgb(43, 43, 43);
+}
+
+.project-technology span {
+  margin: 0;
+  color: #ff3852;
+}
+
+.project-technology h4 {
+  margin: 0;
+}
+
+.technology-bar {
+  padding: 0 5px;
+}
+
+.technology-icon {
+  margin: 3px 5px 0 0;
+}
+
+.disable-link {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
