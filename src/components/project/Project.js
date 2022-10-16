@@ -8,7 +8,7 @@ function Project({ URL, title, data, demo_link, source_code, description, techno
 			<div className="project-img">
 
 				{
-					<img src={`${URL}${data.image}`} alt="" />
+					<img src={"https://backend-alampobon34.herokuapp.com/uploads/" + data.image} alt="" />
 				}
 				{/* <img src={img} alt="" /> */}""
 			</div>
@@ -35,7 +35,7 @@ function Project({ URL, title, data, demo_link, source_code, description, techno
 						<>
 							{/* <span>{technology.name ? technology.name : ""}</span> */}
 							{/* <span className='technology-bar'>|</span> */}
-							<img className='technology-icon' src={`${URL}${technology.icon}`} alt="" width={40} height={40} />
+							<img className='technology-icon' src={"https://backend-alampobon34.herokuapp.com/uploads/" + technology.icon} alt="" width={40} height={40} />
 
 						</>
 

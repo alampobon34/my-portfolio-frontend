@@ -20,7 +20,7 @@ function About({ technology }) {
 				<div className="about-technology">
 					<div className="technology-row">
 						{technology.map(technology => (
-							<img key={technology.id} className="technology-icons" src={`${URL}${technology.icon}`} alt="" />
+							<img key={technology.id} className="technology-icons" src={"https://backend-alampobon34.herokuapp.com/uploads/" + technology.icon} alt="" />
 
 						))}
 
