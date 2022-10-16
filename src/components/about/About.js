@@ -40,7 +40,7 @@ function About({ technology }) {
 
 				{/* paragraph */}
 				<div className="about-desc">
-					<p>As a self-taught developer, I have spent the last few years learning the technologies listed here. Feel free to follow the links from each icon to see projects or articles I've produced in each tenchnology.</p>
+					<p>I have spent a significant amount of time in understanding the technologies listed here as a self-taught developer.</p>
 				</div>
 
 
