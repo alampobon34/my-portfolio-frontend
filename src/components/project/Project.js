@@ -1,8 +1,8 @@
 import React from 'react'
 import img from './img.png';
 import './Project.css';
-function Project({ title, data, demo_link, source_code, description, technologies }) {
-	const URL = "http://127.0.0.1:8000/uploads/"
+function Project({ URL, title, data, demo_link, source_code, description, technologies }) {
+
 	return (
 		<div className='project center' id="project">
 			<div className="project-img">

@@ -7,8 +7,10 @@ import vue from './icons/icons8-vue-js.svg';
 import laravel from './icons/laravel-2.svg';
 import django from './icons/icons8-django.svg'
 import react from './icons/react-2.svg';
+
 import './About.css';
 function About({ technology }) {
+
 	return (
 		<div className='about' id='about'>
 			<div className='about-container center'>
@@ -18,7 +20,7 @@ function About({ technology }) {
 				<div className="about-technology">
 					<div className="technology-row">
 						{technology.map(technology => (
-							<img key={technology.id} className="technology-icons" src={"http://127.0.0.1:8000/uploads/" + technology.icon} alt="" />
+							<img key={technology.id} className="technology-icons" src={`${URL}${technology.icon}`} alt="" />
 
 						))}
 

@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import hero from './pic.jpg';
 import './Hero.css';
 import api from '../../helpers/axios'
-function Hero({ profileName, profileBio, imageURL, profile }) {
+function Hero({ profileName, profileBio, imageURL, profile, URL }) {
 
 
 	return (
@@ -15,7 +15,7 @@ function Hero({ profileName, profileBio, imageURL, profile }) {
 
 				<div className="hero-image">
 					{
-						profile.image ? <img src={"http://127.0.0.1:8000/uploads/" + profile.image} alt="" />
+						profile.image ? <img src={`${URL}${profile.image}`} alt="" />
 							: <img src={hero} alt="" />
 					}
 				</div>

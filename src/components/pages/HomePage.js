@@ -9,6 +9,7 @@ function HomePage() {
 	const [profile, setProfile] = useState([]);
 	const [projects, setProjects] = useState([]);
 	const [technologies, setTechnologies] = useState([]);
+	const URL = "https://backend-alampobon34.herokuapp.com/uploads/"
 
 
 	function getHomeData() {
@@ -33,11 +34,11 @@ function HomePage() {
 
 	return (
 		<div className="homepage">
-			<Hero profile={profile} />
-			<About technology={technologies} />
+			<Hero URL={URL} profile={profile} />
+			<About URL={URL} technology={technologies} />
 			{projects.map(project => (
 
-				<Project data={project} key={project.id} title={project.title} demo_link={project.demo_link} source_code={project.source_code} technologies={project.technologies} description={project.description} />
+				<Project URL={URL} data={project} key={project.id} title={project.title} demo_link={project.demo_link} source_code={project.source_code} technologies={project.technologies} description={project.description} />
 			))}
 
 
