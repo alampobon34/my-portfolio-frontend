@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './img.png';
+import img from './basic-banner.jpg';
 import './Project.css';
 function Project({ URL, title, data, demo_link, source_code, description, technologies }) {
 
@@ -8,15 +8,21 @@ function Project({ URL, title, data, demo_link, source_code, description, techno
 			<div className="project-img">
 
 				{
-					<img src={"https://backend-alampobon34.herokuapp.com/uploads/" + data.image} alt="" />
+					data.image ? <img src={"https://backend-alampobon34.herokuapp.com/uploads/" + data.image} alt="" />
+
+						: < img src={img} alt="" />
 				}
-				{/* <img src={img} alt="" /> */}""
+
 			</div>
 
 			<div className="project-details">
 				<h2>{title}</h2>
 				<div className="project-links">
-					<a rel='noopener' target="_blank" aria-label="LinkedIn" href="https://www.linkedin.com/in/sayed-monshurul-alam-430103174/">Demo</a>
+					{demo_link === "none" ?
+						<a className="disable-link" rel='noopener' target="_blank" aria-label="LinkedIn">Demo</a>
+						:
+						<a rel='noopener' target="_blank" aria-label="LinkedIn" href={`${demo_link}`}>Demo</a>
+					}
 					<span>|</span>
 					{source_code === "none" ?
 						<a className="disable-link" rel='noopener' target="_blank" aria-label="LinkedIn">Source Code</a>
@@ -26,7 +32,7 @@ function Project({ URL, title, data, demo_link, source_code, description, techno
 				</div>
 
 				<div className="project-desc">
-					<p>{description}</p>
+					<p>{description ? description : ""}</p>
 				</div>
 
 				<div className="project-technology">
