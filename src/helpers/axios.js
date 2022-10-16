@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const api = axios.create({
-	baseURL: 'http://backend-alampobon34.herokuapp.com/api/',
+	baseURL: 'https://backend-alampobon34.herokuapp.com/api/',
 });
 
 
