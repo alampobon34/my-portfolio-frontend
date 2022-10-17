@@ -4,6 +4,7 @@ import About from '../about/About';
 import Contact from '../contact/Contact';
 import Hero from '../hero/Hero';
 import api from '../../helpers/axios';
+import './HeaderPage.css'
 function HomePage() {
 
 	const [profile, setProfile] = useState([]);
@@ -12,8 +13,8 @@ function HomePage() {
 	const URL = "https://backend-alampobon34.herokuapp.com/uploads/"
 
 
-	function getHomeData() {
-		api.get("home")
+	async function getHomeData() {
+		await api.get("home")
 			.then((response) => {
 				setTechnologies(response.data.technologies);
 				setProfile(response.data.profile);
@@ -36,6 +37,7 @@ function HomePage() {
 		<div className="homepage">
 			<Hero URL={URL} profile={profile} />
 			<About URL={URL} technology={technologies} />
+
 			{projects.map(project => (
 
 				<Project URL={URL} data={project} key={project.id} title={project.title} demo_link={project.demo_link} source_code={project.source_code} technologies={project.technologies} description={project.description} />

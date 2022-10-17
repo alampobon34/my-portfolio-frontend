@@ -15,7 +15,9 @@ function Contact() {
 
 
 
-	function handleClick(e) {
+
+
+	async function handleClick(e) {
 		e.preventDefault();
 
 		const data = {
@@ -23,7 +25,7 @@ function Contact() {
 
 		}
 		// console.log(data);
-		api.post("contact", data)
+		await api.post("contact", data)
 			.then((res) => {
 				const data = res.data;
 				if (data.status === 200) {
