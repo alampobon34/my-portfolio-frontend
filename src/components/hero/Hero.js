@@ -14,10 +14,11 @@ function Hero({ profileName, profileBio, imageURL, profile, URL }) {
 				{/* hero image */}
 
 				<div className="hero-image">
-					{
+					{/* {
 						profile.image ? <img src={`${URL}${profile.image}`} alt="" />
 							: <img src={hero} alt="" />
-					}
+					} */}
+					<img src={hero} alt="" />
 				</div>
 
 				{/* hero detail */}

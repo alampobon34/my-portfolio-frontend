@@ -19,28 +19,28 @@ function About({ technology }) {
 
 				<div className="about-technology">
 					<div className="technology-row">
-						{technology.map(technology => (
+						{/* {technology.map(technology => (
 							<img key={technology.id} className="technology-icons" src={"https://backend-alampobon34.herokuapp.com/uploads/" + technology.icon} alt="" />
 
-						))}
+						))} */}
 
-						{/* <img className="technology-icons" src={html} alt="" /> */}
-						{/* <img className="technology-icons" src={css} alt="" />
+						<img className="technology-icons" src={html} alt="" />
+						<img className="technology-icons" src={css} alt="" />
 						<img className="technology-icons" src={js} alt="" />
-						<img className="technology-icons" src={python} alt="" /> */}
+						<img className="technology-icons" src={python} alt="" />
 					</div>
-					{/* <div className="technology-row">
+					<div className="technology-row">
 						<img className="technology-icons" src={react} alt="" />
 						<img className="technology-icons" src={vue} alt="" />
 						<img className="technology-icons" src={laravel} alt="" />
 						<img className="technology-icons" src={django} alt="" />
-					</div> */}
+					</div>
 
 				</div>
 
 				{/* paragraph */}
 				<div className="about-desc">
-					<p>I have spent a significant amount of time in understanding the technologies listed here as a self-taught developer.</p>
+					<p>As a self-taught developer, I have spent a significant amount of time in understanding the technologies which is listed here.</p>
 				</div>
 
 
