@@ -47,7 +47,8 @@ function Project({ title, data, demo_link, source_code, description, technologie
 		}
 		else if (name === "Netflix Clone") {
 			return <img src={netflix} alt="" />
-		} else {
+		}
+		else {
 			return <img src={banner} alt="" />
 		}
 	}
